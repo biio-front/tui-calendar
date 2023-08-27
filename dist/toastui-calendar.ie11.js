@@ -18368,7 +18368,7 @@ function getEventItemStyle(_ref) {
     borderRadius: getBorderRadius(exceedLeft, exceedRight),
     overflow: 'hidden',
     height: eventHeight,
-    lineHeight: toPx(eventHeight),
+    // lineHeight: toPx(eventHeight),
     opacity: isDraggingTarget ? 0.5 : 1
   };
   var margins = getMargins(flat);
@@ -18566,7 +18566,7 @@ function HorizontalEvent(_ref4) {
     "data-event-id": id,
     ref: eventContainerRef
   }, h("div", {
-    className: classNames.eventBody,
+    className: "".concat(classNames.eventBody, " fixed-by-biio"),
     style: horizontalEvent_objectSpread(horizontalEvent_objectSpread({}, eventItemStyle), {}, {
       backgroundColor: isDotEvent ? null : eventItemStyle.backgroundColor,
       borderLeft: isDotEvent ? null : eventItemStyle.borderLeft

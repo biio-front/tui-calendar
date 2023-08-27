@@ -5625,7 +5625,6 @@ function getEventItemStyle({
     borderRadius: getBorderRadius(exceedLeft, exceedRight),
     overflow: "hidden",
     height: eventHeight,
-    lineHeight: toPx(eventHeight),
     opacity: isDraggingTarget ? 0.5 : 1
   };
   const margins = getMargins(flat);
@@ -5770,7 +5769,7 @@ function HorizontalEvent({
     "data-event-id": id,
     ref: eventContainerRef
   }, /* @__PURE__ */ h$3("div", {
-    className: classNames$k.eventBody,
+    className: `${classNames$k.eventBody} fixed-by-biio`,
     style: __spreadProps(__spreadValues({}, eventItemStyle), {
       backgroundColor: isDotEvent ? null : eventItemStyle.backgroundColor,
       borderLeft: isDotEvent ? null : eventItemStyle.borderLeft
