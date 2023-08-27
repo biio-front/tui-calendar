@@ -12265,7 +12265,7 @@ function getEventItemStyle(_ref) {
     borderRadius: getBorderRadius(exceedLeft, exceedRight),
     overflow: 'hidden',
     height: eventHeight,
-    // lineHeight: toPx(eventHeight),
+    lineHeight: '24px',
     opacity: isDraggingTarget ? 0.5 : 1
   };
   const margins = getMargins(flat);
@@ -12461,7 +12461,7 @@ function HorizontalEvent(_ref4) {
     "data-event-id": id,
     ref: eventContainerRef
   }, h("div", {
-    className: "".concat(classNames.eventBody, " fixed-by-biio"),
+    className: classNames.eventBody,
     style: { ...eventItemStyle,
       backgroundColor: isDotEvent ? null : eventItemStyle.backgroundColor,
       borderLeft: isDotEvent ? null : eventItemStyle.borderLeft

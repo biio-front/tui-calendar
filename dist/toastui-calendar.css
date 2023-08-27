@@ -365,9 +365,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-left: 3px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .toastui-calendar-weekday-event-dot {
@@ -988,7 +987,7 @@
 
 .toastui-calendar-day-name-item {
   position: absolute;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   text-align: left;
   padding: 0 10px;
@@ -1101,12 +1100,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* TODO: define this class in more common place */
 .toastui-calendar-weekday-event {
   cursor: pointer;
+  padding: 5px;
 }
 
 .toastui-calendar-weekday {
